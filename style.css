@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+#head {
+  width: 100%;
+  height: 10vh;
+  background: rgb(149, 64, 21);
+  background: linear-gradient(
+    0deg,
+    rgba(149, 64, 21, 1) 0%,
+    rgba(65, 22, 2, 1) 100%
+  );
+  text-align: center;
+  font-family: "Secular One", monospace, sans-serif;
+  font-size: large;
+  color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#paises {
+  background-color: bisque;
+  width: 100%;
+  height: 180vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchbar {
+  background-color: bisque;
+  padding-top: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 2px;
+}
+#button {
+  width: 100px;
+  height: 30px;
+  border-radius: 1rem;
+  background-color: sienna;
+  color: white;
+}
+
+#input {
+  text-align: center;
+  width: 200px;
+}
+
+a{
+    text-decoration:none;
+    text-transform: uppercase;
+    color: white;
+}
+
+a:hover{
+    color:black;
+    text-decoration: underline;    
+}
+
+.pais {
+    width: 50vw;
+    height: 28vh;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    border: 2px solid black;
+    background: linear-gradient(
+    0deg,
+    rgba(149, 64, 21, 1) 0%,
+    rgba(65, 22, 2, 1) 100%
+  );
+    color: white;
+    border-radius: 2rem;
+  }
+
+  .ul{
+    display: grid;
+    grid-column: 1/span 2;
+  }
+
+  .bandeira {
+    width: 15vw;
+    height: 22vh;
+    margin-right: 1rem;
+    grid-column: 3;
+    justify-self: end;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 1rem;
+  }
+
+  #paisesRenderizados {
+    background-color: bisque;
+    width: 100%;
+    height: 75.7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  
+
+#paisRenderizado {
+  width: 50vw;
+  height: 50vh;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid black;
+  background: linear-gradient(
+    0deg,
+    rgba(149, 64, 21, 1) 0%,
+    rgba(65, 22, 2, 1) 100%
+  );
+  color: white;
+  align-items: center;
+  border-radius: 2rem;
+  
+}
+
+#paisRenderizado > .bandeira {
+  width: 17rem;
+  height: 12rem;
+  justify-self: end;
+  align-self: center;
+  border: 1px solid black;
+  border-radius: 5rem;
+  margin-top: 3vh;
+}
+
+
+footer {
+  width: 100%;
+  height: 7vh;
+  background: rgb(149, 64, 21);
+  background: linear-gradient(
+    0deg,
+    rgba(149, 64, 21, 1) 0%,
+    rgba(65, 22, 2, 1) 100%
+  );
+  text-align: center;
+  font-family: "Source Code Pro", monospace, sans-serif;
+  font-size: large;
+  color: black;
+}
