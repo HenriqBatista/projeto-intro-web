@@ -178,7 +178,7 @@ function criaCard (paises){
     card += `<section class = "pais">
       <ul class = "ul">
         <li>
-          Nome:<a href=${pais.link}>${pais.Nome}</a>
+          Nome:<a href=${pais.link} target="_blank">${pais.Nome}</a>
         </li>
         <li>Subdivisões: ${pais.Subdivisoes}</li>
         <li>População: ${pais.Populacao}</li>
@@ -206,7 +206,7 @@ document.getElementById("button").addEventListener("click", function(){
       paisRender += `<section class = "pais">
       <ul class = "ul">
         <li>
-          Nome:<a href=${pais.link}>${pais.Nome}</a>
+          Nome:<a href=${pais.link} target="_blank">${pais.Nome}</a>
         </li>
         <li>Subdivisões: ${pais.Subdivisoes}</li>
         <li>População: ${pais.Populacao}</li>
@@ -227,6 +227,7 @@ textoBusca.addEventListener("input", function(){
   if (textoBusca.value.length === 0){
     cards.innerHTML = createCard
   }
+  
   // let paisBusca = paises.filter((nome =>{
   //   // return nome
     
